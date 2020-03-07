@@ -1,0 +1,6 @@
+# robots.txt for https://www.permabond.com.tw/
+
+User-agent: *
+Disallow:
+
+Sitemap: https://www.permabond.com.tw/sitemap.xml
