@@ -21,12 +21,11 @@
         <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.css">
         <!-- Animate.css -->
         <link rel="stylesheet" href="assets/styles/vendor/animate.css">
-
-
         <!-- Definity CSS -->
         <link rel="stylesheet" href="assets/styles/main.css">
         <link rel="stylesheet" href="assets/styles/responsive.css">
-
+        <!-- Customer CSS -->
+        <link rel="stylesheet" href="assets/styles/customer.css">
         <!-- JS -->
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -36,18 +35,11 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
-
         <!-- ========== Preloader ========== -->
-
         <div class="preloader">
           <img src="assets/images/loader.svg" alt="Loading...">
         </div>
-        
-
-
         <!-- ========== Navigation ========== -->
-
         <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans">
           <div class="container">
             <div class="navbar-header">
@@ -65,7 +57,9 @@
             <!-- Navbar Links -->
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">關於凱興</a>
+                </li><!-- / Blog -->
                 <!-- Home -->
                 <li class="dropdown mega-fw">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">服務項目<span class="caret"></span></a>
@@ -101,16 +95,6 @@
                 </li><!-- / Home -->
 
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">關於凱興 <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="pages/blog/blog-left-sidebar.html">公司簡介</a></li>
-                    <li><a href="pages/blog/blog-right-sidebar.html">發展沿革</a></li>
-                    <li><a href="pages/blog/blog-2col.html">專業認證</a></li>
-                    <li><a href="pages/blog/blog-3col.html">工廠與設備</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">行業知識 <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="pages/blog/blog-left-sidebar.html">為何選用鋁合金</a></li>
@@ -130,45 +114,34 @@
             </div><!--/.navbar-collapse -->
           </div><!-- / .container -->
         </nav><!-- / .navbar -->
-
-
-
         <!-- ========== Hero Cover ========== -->
-
         <div class="fs-slider-hero">
           <div class="fs-slider">
             
-            <!-- Slide 1 -->
-            <div class="fs-slider-item fs-slide-1">
+            <!-- Slide 2 -->
+            <div class="fs-slider-item fs-slide-2" style="background-image: url('/assets/images/index-slide1.jpg');">
               <div class="bg-overlay">
-                                
                 <!-- Hero Content -->
                 <div class="hero-content-wrapper">
                   <div class="hero-content">
-                    
-                    <h1 class="hero-lead wow fadeInUp" data-wow-duration="2s">Beautifully<br> Crafted</h1>
-                    <h4 class="h-alt hero-subheading wow fadeIn" data-wow-delay=".5s" data-wow-duration="1.5s">Multipage &amp; Onepage HTML5 Templates</h4>
-                    <a href="#services" class="btn wow fadeIn" data-wow-delay=".7s" data-wow-duration="2s">Learn More</a>
-
+                    <h1 class="hero-lead">凱興用心<br> 絕對安心</h1>
+                    <h4 class="h-alt hero-subheading wow fadeInUp">最專業的鋁表面處理技術</h4>
+                    <a href="#services" class="btn btn-light wow fadeInDown f-w-b">了解更多</a>
                   </div>
                 </div>
 
               </div><!-- / .bg-overlay -->
-            </div><!-- / .fs-slide-1 -->
-
+            </div><!-- / .fs-slide-2 -->
 
             <!-- Slide 2 -->
             <div class="fs-slider-item fs-slide-2">
               <div class="bg-overlay">
-                                
                 <!-- Hero Content -->
                 <div class="hero-content-wrapper">
                   <div class="hero-content">
-                    
-                    <h1 class="hero-lead">Follow<br> your<br> passion</h1>
-                    <h4 class="h-alt hero-subheading wow fadeInUp">photography / creative / freelancer / portfolio</h4>
-                    <a href="#services" class="btn btn-light wow fadeInDown">Learn More</a>
-
+                    <h1 class="hero-lead">凱興用心<br> 絕對安心</h1>
+                    <h4 class="h-alt hero-subheading wow fadeInUp">最專業的鋁表面處理技術</h4>
+                    <a href="#services" class="btn btn-light wow fadeInDown f-w-b">了解更多</a>
                   </div>
                 </div>
 
@@ -184,10 +157,10 @@
                 <div class="hero-content-wrapper">
                   <div class="hero-content">
                     
-                    <h4 class="h-alt hero-subheading">corporate / agency / freelancer / portfolio</h4>
-                    <h1 class="hero-lead">Make <span>things</span> happen</h1>
+                    <h4 class="h-alt hero-subheading">高品質 / 高產能 / 低成本 / 準確交期</h4>
+                    <h1 class="hero-lead">最專業的CNC洗床加工技術</h1>
                     
-                    <a href="#services" class="btn-light">Learn More</a>
+                    <a href="#services" class="btn-light f-w-b">了解更多</a>
 
                   </div>
                 </div>
@@ -214,8 +187,8 @@
           <section class="container section ft-cards-2">
             
             <header class="sec-heading">
-              <h2>What we do</h2>
-              <span class="subheading">Lorem ipsum dolor sit amet, consectetur</span>
+              <h2>What we do / 我們提供的服務</h2>
+              <span class="subheading">提高品質 / 降低成本 / 準時交期</span>
             </header>
 
             <div class="row">
@@ -278,33 +251,37 @@
 
         <section class="container ft-steps-numbers">
             <div class="row section">
-
               <header class="sec-heading ws-s">
-                <h2>Our work process</h2>
-                <span class="subheading">Lorem ipsum dolor sit amet, consectetur</span>
+                <h2>Our work process / 製造品管流程</h2>
+                <span class="subheading">以顧客角度思考、做好每項服務以維繫優良品質、主動提升新式技術</span>
               </header>
-              
               <!-- Step 1 -->
               <div class="col-lg-4 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s">
                 <span class="ft-nbr">01</span>
-                <h4>Design</h4>
-                <p>Lariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
+                <h4 class="f-w-b">IQC作業流程</h4>
+                <ul>
+                  <li>驗料通知 - 按需驗項目檢驗</li>
+                  <li>良品入庫，不良品標示隔離退回</li>
+                </ul>
               </div>
-
               <!-- Step 2 -->
               <div class="col-lg-4 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
                 <span class="ft-nbr">02</span>
-                <h4>Develop</h4>
-                <p>Lariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
+                <h4>PQC作業流程</h4>
+                <ul>
+                  <li>開線首件產品確認 - 產線生產和自檢（中間抽驗復判）</li>
+                  <li>NG品經主管確認調整 - 三方檢討確認無誤後生產和自檢（中間抽驗復判）</li>
+                </ul>
               </div>
-
               <!-- Step 3 -->
               <div class="col-lg-4 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
                 <span class="ft-nbr">03</span>
-                <h4>Deploy</h4>
-                <p>Lariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
+                <h4>OQC作業流程</h4>
+                <ul>
+                  <li>接到驗料通知 - 依AQL標準抽檢驗 - 良品入庫出貨</li>
+                  <li>NG品經主管確認重工全檢 - 如不良品走退貨流程</li>
+                </ul>
               </div>
-
             </div><!-- / .row -->
             
             <!-- CTA Button -->
@@ -316,63 +293,24 @@
 
         </section><!-- / .container -->
 
-
-
-        <!-- ========== Cricle Counters - Parallax ========== -->
-
-        <div id="skillsCircles" class="circles-counters">
-          <div class="container">
-            <div id="counters" class="row count-wrapper">
-              
-              <!-- Item 1 -->
-              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-gear"></span></div>
-                <span class="circle-text">Web Development</span>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-display"></span></div>
-                <span class="circle-text">Web Design</span>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-photo"></span></div>
-                <span class="circle-text">Photography</span>
-              </div>
-
-              <!-- Item 4 -->
-              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-star"></span></div>
-                <span class="circle-text">Marketing</span>
-              </div>
-
-            </div><!-- / .row -->
-          </div><!-- / .container -->
-        </div><!-- / .circles-counters -->
-
-        
-
         <!-- ========== Portfolio ========== -->
 
         <section class="container portfolio-layout portfolio-columns-boxed">
           <div class="row">
             <header class="sec-heading">
-              <h2>Some of our project</h2>
-              <span class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing</span>
+              <h2>Some of our project / 您的產品遭受過這些對待嗎？</h2>
+              <span class="subheading">唯有凱興的服務，符合你們的產品</span>
             </header>
           </div><!-- / .row -->
-          
           <!-- Filters -->
-          <div class="row">
+          <!-- <div class="row">
             <ul id="pfolio-filters" class="portfolio-filters">
               <li class="active"><a href="#" data-filter="*">All</a></li>
               <li><a href="#" data-filter=".webdesing">Webdesign</a></li>
               <li><a href="#" data-filter=".print">Print</a></li>
               <li><a href="#" data-filter=".photo">Photography</a></li>
             </ul>
-          </div>
+          </div> -->
 
           <div class="row ws-m">
             <div id="pfolio">
@@ -383,8 +321,8 @@
                   <img src="http://placehold.it/990x650/aaa/ccc" alt="Project Example">
                   <div class="p-hover">
                     <div class="p-content">
-                      <h4>Project Name</h4>
-                      <h6 class="subheading">Sub heading for the project</h6>
+                      <h4>產量無法提升</h4>
+                      <h6 class="subheading">Yield cannot be increased</h6>                      
                     </div>
                   </div>
                   <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
@@ -394,11 +332,11 @@
               <!-- Item 2 -->
               <div class="col-md-4 portfolio-item webdesing photo">
                 <div class="p-wrapper hover-default">
-                  <img src="http://placehold.it/990x650" alt="Project Example">
+                  <img src="assets/images/index-icon-1.png" alt="Project Example">
                   <div class="p-hover">
                     <div class="p-content">
-                      <h4>Project Name</h4>
-                      <h6 class="subheading">Sub heading for the project</h6>
+                      <h4>不良率起伏大</h4>
+                      <h6 class="subheading">Bad rate fluctuates</h6>                      
                     </div>
                   </div>
                   <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
@@ -408,11 +346,11 @@
               <!-- Item 3 -->
               <div class="col-md-4 portfolio-item photo print">
                 <div class="p-wrapper hover-default">
-                  <img src="http://placehold.it/990x650/aaa/ccc" alt="Project Example">
+                  <img src="assets/images/index-icon-2.png" alt="Project Example">
                   <div class="p-hover">
                     <div class="p-content">
-                      <h4>Project Name</h4>
-                      <h6 class="subheading">Sub heading for the project</h6>
+                      <h4>交期不夠準時</h4>
+                      <h6 class="subheading">Delivery is not on time</h6>                      
                     </div>
                   </div>
                   <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
@@ -425,8 +363,8 @@
                   <img src="http://placehold.it/990x650" alt="Project Example">
                   <div class="p-hover">
                     <div class="p-content">
-                      <h4>Project Name</h4>
-                      <h6 class="subheading">Sub heading for the project</h6>
+                      <h4>成本無法降低</h4>
+                      <h6 class="subheading">Cost cannot be reduced</h6>
                     </div>
                   </div>
                   <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
@@ -439,8 +377,8 @@
                   <img src="http://placehold.it/990x650/aaa/ccc" alt="Project Example">
                   <div class="p-hover">
                     <div class="p-content">
-                      <h4>Project Name</h4>
-                      <h6 class="subheading">Sub heading for the project</h6>
+                      <h4>品質管理欠佳</h4>
+                      <h6 class="subheading">Poor quality management</h6>
                     </div>
                   </div>
                   <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
@@ -453,7 +391,7 @@
                   <img src="http://placehold.it/990x650" alt="Project Example">
                   <div class="p-hover">
                     <div class="p-content">
-                      <h4>Project Name</h4>
+                      <h4>無法雙向溝通</h4>
                       <h6 class="subheading">Sub heading for the project</h6>
                     </div>
                   </div>
@@ -465,458 +403,65 @@
           </div><!-- / .row -->
         </section><!-- / .portfolio-columns-boxed -->
 
-
-
-        <!-- ========== CTA - Contact Link ========== -->
-
-        <div class="cta-link">
-          <div class="bg-overlay">
-            
-            <div class="cta-wrapper">
-              <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">See what we can do for you</h3>
-              <a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s">Get in touch</a>
-            </div>
-
-          </div>
-        </div><!-- / .dark-bg .cta-link -->
-
-
-
-        <!-- ========== Testimonials ========== -->
-
-        <div class="testimonials-parallax">
-          <div class="bg-overlay">
-            
-            <div class="t-wrapper t-slider">
-
-              <!-- Testimonial 1 -->
-              <blockquote>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                <span class="et-quote t-type"></span>
-                <footer>
-                  <cite>
-                    <h5 class="h-alt">Patrick Owens</h5>
-                    <h5>CEO - Company Name</h5>
-                  </cite>
-                </footer>
-              </blockquote>
-
-              <!-- Testimonial 2 -->
-              <blockquote>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                <span class="et-quote t-type"></span>
-                <footer>
-                  <cite>
-                    <h5 class="h-alt">Patrick Owens</h5>
-                    <h5>CEO - Company Name</h5>
-                  </cite>
-                </footer>
-              </blockquote>
-              
-              <!-- Testimonial 3 -->
-              <blockquote>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                <span class="et-quote t-type"></span>
-                <footer>
-                  <cite>
-                    <h5 class="h-alt">Patrick Owens</h5>
-                    <h5>CEO - Company Name</h5>
-                  </cite>
-                </footer>
-              </blockquote>
-
-            </div><!-- / .t-wrapper -->
-            
-            <!-- Client Slider -->
-            <ul class="t-clients clients-slider">
-              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-            </ul><!-- / .t-clients -->
-
-          </div><!-- / .bg-overlay -->
-        </div><!-- / .testimonials-parallax -->
-
-
-
-        <!-- ========== Blog Preview ========== -->
-
-        <div class="gray-bg">
-          <section class="section container blog-columns blog-preview">
-            <div class="row">
-              
-              <header class="sec-heading">
-                <h2>Latest from our blog</h2>
-                <span class="subheading">Check out our blog to see what were up to</span>
-              </header>
-
-              
-              <!-- Blog Post 1 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="blog-post wow fadeIn" data-wow-duration="2s">
-
-                  <!-- Image -->
-                  <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
-
-                  <div class="bp-content">
-                    
-                    <!-- Meta data -->
-                    <div class="post-meta">
-                      <a href="#" class="post-date">
-                        <i class="fa fa-calendar-o"></i>
-                        <span>August 01.2015</span>
-                      </a>
-                      <a href="#" class="post-comments">
-                        <i class="fa fa-comments-o"></i>
-                        <span>12</span>
-                      </a>
-                    </div><!-- / .meta -->
-
-                    <!-- Post Title -->
-                    <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
-
-                    <!-- Blurb -->
-                    <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
-
-                    <!-- Link -->
-                    <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
-
-                  </div><!-- / .bp-content -->
-
-                </div><!-- / .blog-post -->
-              </div><!-- / .col-lg-4 -->
-
-
-              <!-- Blog Post 2 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">
-
-                  <!-- Image -->
-                  <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
-
-                  <div class="bp-content">
-                    
-                    <!-- Meta data -->
-                    <div class="post-meta">
-                      <a href="#" class="post-date">
-                        <i class="fa fa-calendar-o"></i>
-                        <span>August 01.2015</span>
-                      </a>
-                      <a href="#" class="post-comments">
-                        <i class="fa fa-comments-o"></i>
-                        <span>12</span>
-                      </a>
-                    </div><!-- / .meta -->
-
-                    <!-- Post Title -->
-                    <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
-
-                    <!-- Blurb -->
-                    <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
-
-                    <!-- Link -->
-                    <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
-
-                  </div><!-- / .bp-content -->
-
-                </div><!-- / .blog-post -->
-              </div><!-- / .col-lg-4 -->
-
-              
-              <!-- Blog Post 3 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".6s">
-
-                  <!-- Image -->
-                  <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
-
-                  <div class="bp-content">
-                    
-                    <!-- Meta data -->
-                    <div class="post-meta">
-                      <a href="#" class="post-date">
-                        <i class="fa fa-calendar-o"></i>
-                        <span>August 01.2015</span>
-                      </a>
-                      <a href="#" class="post-comments">
-                        <i class="fa fa-comments-o"></i>
-                        <span>12</span>
-                      </a>
-                    </div><!-- / .meta -->
-
-                    <!-- Post Title -->
-                    <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
-
-                    <!-- Blurb -->
-                    <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
-
-                    <!-- Link -->
-                    <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
-
-                  </div><!-- / .bp-content -->
-
-                </div><!-- / .blog-post -->
-              </div><!-- / .col-lg-4 -->
-
-
-            </div><!-- / .row -->
-          </section><!-- / .container -->
-        </div><!-- / .gray-bg -->
-
-
-
-        <!-- ========== CTA - Newsletter Signup ========== -->
-
-        <div class="cta-newsletter">
-          <div class="bg-overlay">
-            <div class="cta-wrapper">
-
-              <h3 class="cta-lead h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Join our newsletter</h3>
-
-              <form class="mc-ajax mc-form subscribe-form" _lpchecked="1">
-
-                <!-- Email -->
-                <input type="email" name="EMAIL" placeholder="Your email address" id="mc-email" class="wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s" >
-                
-                <!-- Send Button -->
-                <input type="submit" name="subscribe" value="Join Us" class="btn btn-light btn-large wow fadeInUp mc-send-btn" data-wow-delay=".1s" data-wow-duration="1s">
-
-                <!-- Info (uncomment this for extra info) -->
-                <!-- <label for="mc-email" class="mc-info"></label> -->
-
-                <!-- Ajax message -->
-                <div class="subscribe-result"></div>
-                
-              </form>
-
-            </div><!-- / .cta-wrapper -->
-          </div><!-- / .bg-overlay -->
-        </div><!-- / .cta-newsletter -->
-
-
-
-        <!-- ========== Contact ========== -->
-
-        <section class="section contact-1">
-          
-          <header class="sec-heading">
-            <h2>Countact Us</h2>
-            <span class="subheading">We love to hear from you</span>
-          </header>
-          
-          <div class="contact-wrapper">
-            <!-- Map -->
-            <div id="map-canvas" class="gmap map-boxed"></div>
-
-            <!-- Show Info Button -->
-            <div class="show-info-link">
-              <a href="#" class="show-info"><i class="fa fa-info"></i><h6>Show info</h6></a>
-            </div>
-
-            <div class="container">
-              <div class="row ws-m">
-
-                <!-- Address Info -->
-                <div class="col-xs-offset-1 col-xs-11 col-md-offset-2 col-md-6 contact-info-wrapper">
-                  <address>
-                    <div class="row">
-
-                      <!-- Phone -->
-                      <div class="col-sm-6 address-group">
-                        <span>Phone</span>
-                        <a href="#">+ 123 4567 890</a>
-                        <a href="#">+ 123 7654 098</a>
-                      </div>
-
-                      <!-- Address -->
-                      <div class="col-sm-5 address-group">
-                        <span>Address</span>
-                        <p>1200 some street, il, US</p>
-                      </div>
-
-                    </div><!-- / .row -->
-
-                    <div class="row">
-
-                      <!-- Email -->
-                      <div class="col-sm-6 address-group">
-                        <span>Email</span>
-                        <a href="mailto:sayhello@email.com">sayhello@email.com</a>
-                      </div>
-
-                      <!-- Hours -->
-                      <div class="col-sm-5 address-group">
-                        <span>Open Hours</span>
-                        <p>Mon-Fri: 9am-5pm</p>
-                        <p>Sat: 10am-1pm</p>
-                      </div>
-
-                    </div><!-- / .row -->
-
-                    <!-- Show Map Button -->
-                    <div class="row show-map-link">
-                      <a href="#" class="show-map"><span class="icon-map-pin"></span>Show on map</a>
-                    </div><!-- / .row -->
-                  </address>
-                </div><!-- / .contact-info-wrapper -->
-              </div><!-- / .row -->
-              
-              <!-- Contact Form -->
-              <div class="row">
-                <form action="assets/contact-form/contact-form.php" method="POST" id="contact-form-1" class="form-ajax">
-                  <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s">
-
-                    <!-- Name -->
-                    <div class="form-group">
-                      <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
-                      <label for="name-contact-1">Name</label>
-                      <span class="pull-right alert-error"></span>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="form-group">
-                      <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
-                      <label for="email-contact-1">Email</label>
-                      <span class="pull-right alert-error"></span>
-                    </div>
-
-                  </div>
-
-                  <div class="col-md-4 wow fadeInUp" data-wow-duration="1s">
-
-                    <!-- Message -->
-                    <div class="form-group">
-                      <textarea name="message" id="message-contact-1" class="form-control" rows="5" placeholder="Your Message"></textarea>
-                      <label for="message-contact-1">Message</label>
-                    </div>
-                    <div>
-                      <input type="submit" class="btn pull-right" value="Send Message">
-                    </div>
-
-                    <!-- Ajax Message -->
-                    <div class="ajax-message col-md-12 no-gap"></div>
-
-                  </div><!-- / .col-md-4 -->
-
-                </form>
-              </div><!-- / .row -->
-            </div><!-- / .container -->
-          </div><!-- / .contact-wrapper -->
-        </section><!-- / .contact-1 -->
-
-
-
         <!-- ========== Footer Widgets ========== -->
-        
-        <footer class="footer-widgets">
-          <div class="container">
-            <div class="row section">
-
-              <!-- About Us -->
-              <div class="col-md-3 col-sm-6 mb-sm-100">
-                <div class="widget about-widget">
-                  <h5 class="header-widget">About Us</h5>
-                  <p>Lorem ipsum dolor sit amet, eiusmod consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-
-                  <ul class="social-links">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                  </ul>
-                </div><!-- / .widget -->
-              </div><!-- / .col-md-3 -->
-
-              <!-- Instagram Feed -->
-              <div class="col-md-3 col-sm-6 mb-sm-100">
-                <div class="widget gallery-widget">
-                  <h5 class="header-widget">Instagram Feed</h5>
-                  <ul>
-
-                    <li><a href="http://placehold.it/650x450" class="gallery-widget-lightbox"><img src="http://placehold.it/87x87/999/eee" alt="Instagram Image"><div class="hover-link"><span class="linea-arrows-plus"></span></div></a></li>
-
-                    <li><a href="http://placehold.it/650x450" class="gallery-widget-lightbox"><img src="http://placehold.it/87x87" alt="Instagram Image"><div class="hover-link"><span class="linea-arrows-plus"></span></div></a></li>
-
-                    <li><a href="http://placehold.it/650x450" class="gallery-widget-lightbox"><img src="http://placehold.it/87x87/999/eee" alt="Instagram Image"><div class="hover-link"><span class="linea-arrows-plus"></span></div></a></li>
-
-                    <li><a href="http://placehold.it/650x450" class="gallery-widget-lightbox"><img src="http://placehold.it/87x87" alt="Instagram Image"><div class="hover-link"><span class="linea-arrows-plus"></span></div></a></li>
-
-                    <li><a href="http://placehold.it/650x450" class="gallery-widget-lightbox"><img src="http://placehold.it/87x87/999/eee" alt="Instagram Image"><div class="hover-link"><span class="linea-arrows-plus"></span></div></a></li>
-
-                    <li><a href="http://placehold.it/650x450" class="gallery-widget-lightbox"><img src="http://placehold.it/87x87" alt="Instagram Image"><div class="hover-link"><span class="linea-arrows-plus"></span></div></a></li>
-
-                  </ul>
-                </div><!-- / .widget -->
-              </div><!-- / .col-md-3 -->
-
-              <!-- Twitter Feed -->
-              <div class="col-md-3 col-sm-6 mb-sm-100">
-                <div class="widget twitter-widget">
-                  <h5 class="header-widget">Twitter Feed</h5>
-                  <ul>
-                    
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <p>5 Reasons You Should Take a Sabbatical from Creative Work <a href="#">http://enva.to/NTa6F</a> by <a href="#">@envato</a> <span>- AUG 10</span></p>
-                    </li>
-
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <p>What is the enemy of <a href="#">#creativity</a>? <a href="#">http://enva.to/hVl5G</a>  [VIDEO] <br>by <a href="#">@envato</a> <span>- AUG 5</span></p>
-                    </li>
-
-                  </ul>
-                </div><!-- / .widget -->
-              </div><!-- / .col-md-3 -->
-
-              <!-- Newsletter -->
-              <div class="col-md-3 col-sm-6">
-                <div class="widget newsletter-widget">
-                  <h5 class="header-widget">Newsletter</h5>
-                  
-                  <form class="mc-form subscribe-form" _lpchecked="1">
-                    <div class="form-group">
-
-                      <!-- Email -->
-                      <input type="email" name="EMAIL" placeholder="Join our newsletter">
-                      
-                      <!-- Send Button -->
-                      <button type="submit" name="subscribe" class="mc-send-btn"><i class="fa fa-send-o"></i></button>
-                    </div>
-
-                    <!-- Ajax message -->
-                    <div class="subscribe-result"></div>
-                  </form>
-
-                </div><!-- / .widget -->
-              </div><!-- / .col-md-3 -->
-
-            </div><!-- / .row -->
-          </div><!-- / .container -->
-
-
-          <!-- Copyright -->
-          <div class="copyright">
+        <footer>
+          <div class="footer-widgets">
             <div class="container">
               <div class="row">
-                
-                <div class="col-sm-6">
-                  <small>&copy; 2015 Definity. Made by <a class="no-style-link" href="http://themeforest.net/user/octarinethemes" target="_blank">OctarineThemes</a></small>
+                <!-- WIDGET -->
+                <div class="col-lg-4">
+                  <div class="footer-widget">
+                    <img src="assets/images/logo.png" class="footer-logo" alt="政達冷氣行 冷氣安裝" width="190">
+                  </div>
                 </div>
-
-                <div class="col-sm-6">
-                  <small><a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
+                <!-- WIDGET -->
+                <div class="col-lg-4 col-sm-6">
+                  <div class="footer-widget">
+                    <div class="inner">
+                      <ul class="contact-details">
+                        <li>
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                          <a href="tel:+886-2676-3799">(02) 2689-9351 / (02) 2676-3799</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-mobile" aria-hidden="true"></i>
+                          <a href="tel:0932227943">0932227943 / 0932121776</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-
-              </div><!-- / .row -->
-            </div><!-- / .container -->
-          </div><!-- / .copyright -->
-
-        </footer><!-- / .footer-widgets -->
+                <!-- WIDGET -->
+                <div class="col-lg-4 col-sm-6">
+                  <div class="footer-widget">
+                    <div class="inner">
+                      <ul class="contact-details">
+                        <li>
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>新北市樹林區光興街47號
+                        </li>
+                        <li>
+                          <i class="fa fa-envelope"></i>
+                          Email:
+                          <a href="mailto:hugo010911@gmail.com">hugo010911@gmail.com</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SUBFOOTER -->
+          <div class="subfooter">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="copyrights text-center">有限公司 版權所有 © 2020 . All Rights Reserved.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
 
 
 

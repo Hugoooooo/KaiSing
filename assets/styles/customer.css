@@ -1,0 +1,298 @@
+/* layout setting */
+html,body {
+    font-family: '微軟正黑體', sans-serif !important;
+}
+.d-inline{ display: inline-block; }
+.d-none{ display: none;}
+.f-w-b{ font-weight: bold;}
+/* footer */
+footer {
+    position: relative;
+    color: #a4a4a4;
+  }
+  
+  footer a {
+    color: #a4a4a4;
+  }
+  
+  footer .footer-widgets {
+    padding: 60px 0;
+    background: #f7f8f9;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  
+  footer.white .footer-widgets {
+    background: #fff;
+  }
+  
+  footer.dark .footer-widgets {
+    background: #333;
+    border-top-color: #333;
+    border-bottom-color: #444;
+  }
+  
+  footer .footer-widgets .footer-widget h3 {
+    color: #afafaf;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  
+  .footer-brand {
+    margin: -40px 0 40px 0;
+    padding: 40px 10px 20px 10px;
+    background: #f2f2f2;
+    text-align: center;
+    position: relative;
+  }
+  
+  .footer-brand:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 131.25px 0 131.25px;
+    border-color: #f2f2f2 transparent transparent transparent;
+    display: block;
+    top: 100%;
+    position: absolute;
+  }
+  
+  footer .footer-widgets .footer-widget .inner {
+    padding-top: 15px;
+  }
+  
+  footer .footer-widgets .footer-widget .footer-logo {
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-widgets .footer-widget .inner .tripadvisor-banner {
+    background: #f2f2f2;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer.dark .footer-widgets .footer-widget .inner .tripadvisor-banner {
+    background: #2c2c2c;
+    border: 1px solid #292929;
+  }
+  
+  footer .footer-widgets .footer-widget .inner .tripadvisor-banner .review {
+    font-size: 12px;
+    color: #afafaf;
+    margin-right: 10px;
+  }
+  
+  footer .footer-widgets .footer-widget .inner .tripadvisor-banner img {
+    max-width: 150px;
+  }
+  
+  footer .footer-widgets .footer-widget .latest-posts, footer .footer-widgets .footer-widget .useful-links, footer .footer-widgets .footer-widget .contact-details {
+    list-style: none;
+  }
+  
+  footer .footer-widgets .footer-widget .latest-posts li, footer .footer-widgets .footer-widget .useful-links li, footer .footer-widgets .footer-widget .contact-details li {
+    padding: 2px 0;
+  }
+  
+  footer .footer-widgets .footer-widget .contact-details li i {
+    margin-right: 5px;
+  }
+  
+  footer .subfooter {
+    background: #fff;
+    padding: 15px 0;
+  }
+  
+  footer.dark .subfooter {
+    background: #333;
+  }
+  
+  footer .subfooter .copyrights {
+    margin-top: 4px;
+  }
+  
+  footer .subfooter .social-media {
+    float: right;
+    margin-top: 4px;
+  }
+  
+  footer .subfooter .social-media a {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 0;
+    border: none;
+    background: none;
+    color: #fff;
+    background: #d7d8d9;
+  }
+  
+  footer.dark .subfooter .social-media a {
+    background: #232628;
+  }
+  
+  footer .subfooter .social-media a i {
+    font-size: 13px;
+  }
+
+.footer-widgets {
+    background: #e0e0e0;
+}
+footer .subfooter{
+    padding: 5px 0;
+    background: #000;
+    color: #fff;
+}
+footer .footer-widgets .footer-widget .inner{
+    padding-top: 0;
+}
+footer .footer-widgets{
+    padding: 0;
+}
+.footer-widget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+}
+footer .footer-widgets .footer-widget .footer-logo{
+    margin-bottom: 0;
+}
+
+/* index setting */
+.fs-slider-hero .fs-slider .fs-slider-item {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .fs-slider-hero .fs-slider .fs-slider-item .bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  
+  .fs-slider-hero .fs-slider .fs-slider-item .hero-content-wrapper {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .fs-slider-hero .fs-slider .fs-slider-item .hero-content-wrapper .hero-content {
+    display: table-cell;
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+  }
+  
+  .fs-slide-1 {
+    background: url('../images/index-slide1.jpg');
+    background-size: cover;
+  }
+  
+  .fs-slide-1 .bg-overlay {
+    background: rgba(17, 17, 17, 0.7);
+  }
+  
+  .fs-slide-1 .hero-content {
+    text-align: center;
+  }
+  
+  .fs-slide-1 .hero-content .hero-lead {
+    font-family: "微軟正黑體","Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 6em;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #ececec;
+  }
+  
+  .fs-slide-1 .hero-content .hero-subheading {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #999;
+  }
+  
+  .fs-slide-2 {
+    background: url('../images/index-slide2.jpg');
+    background-size: cover;
+  }
+  
+  .fs-slide-2 .bg-overlay {
+    background: rgba(17, 17, 17, 0.7);
+  }
+  
+  .fs-slide-2 .hero-content {
+    padding-left: 10%;
+    text-align: left;
+  }
+  
+  .fs-slide-2 .hero-content .hero-lead {
+    font-family: "微軟正黑體","Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 5.5em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #ececec;
+  }
+  
+  .fs-slide-2 .hero-content .hero-lead span {
+    font-weight: 300;
+  }
+  
+  .fs-slide-2 .hero-content .hero-subheading {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #999;
+  }
+  
+  .fs-slide-3 {
+    background: url('../images/index-slide3.jpg');
+    background-size: cover;
+  }
+  
+  .fs-slide-3 .bg-overlay {
+    background: rgba(17, 17, 17, 0.7);
+  }
+  
+  .fs-slide-3 .hero-content {
+    text-align: center;
+  }
+  
+  .fs-slide-3 .hero-content .hero-lead {
+    margin-bottom: 35px;
+    font-family: "微軟正黑體","Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 4em;
+    font-weight: 800;
+    letter-spacing: 15px;
+    color: #ececec;
+  }
+  
+  .fs-slide-3 .hero-content .hero-lead span {
+    font-weight: 300;
+  }
+  
+  .fs-slide-3 .hero-content .hero-subheading {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #999;
+  }
+  
+  .h-alt {
+    font-family: '微軟正黑體', sans-serif;
+    font-weight: bold;
+  }
+
+  .ft-steps-numbers .ft-item ul {
+    margin: 0;
+    padding-left: 85px;
+}
