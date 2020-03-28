@@ -76,10 +76,6 @@ html,body {
      width: 100%; 
     }
 }
-.section{
-   overflow: hidden 
-  }
-
 
 /* index setting */
 .fs-slider-hero .fs-slider .fs-slider-item {
@@ -267,5 +263,14 @@ html,body {
 @media (max-width: 992px){
   .ft-boxed-hover ul li {
     width: 100%;
+  }
 }
+@media (max-width: 1260px){
+  .ft-cards-2 .ft-card-item {
+    max-width: 100%;
+  }
+  .ft-cards-2 .ft-card-item img {
+    max-width: 100%;
+    height: auto;
+  }
 }
