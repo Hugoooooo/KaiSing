@@ -316,7 +316,7 @@ hr {
 }
 
 .section {
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -6302,9 +6302,6 @@ fieldset[disabled] .form-control:hover {
 	17.0 CTA - Call to Action
 -------------------------------------------------- */
 /* ---- 17.1 CTA - Link ---- */
-.cta-link {
-  background: url(../../assets/images/shattered.gif) repeat;
-}
 
 .cta-link .bg-overlay {
   width: 100%;
@@ -6325,10 +6322,6 @@ fieldset[disabled] .form-control:hover {
 }
 
 /* ---- 17.2 CTA - Newsletter Signup ---- */
-.cta-newsletter {
-  background: url(../../assets/images/shattered.gif) repeat;
-}
-
 .cta-newsletter .bg-overlay {
   width: 100%;
   background: rgba(17, 17, 17, 0.5);
