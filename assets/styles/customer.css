@@ -141,7 +141,11 @@ body, .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper
 @media (max-width: 600px){
   .footer-social-links ul li {
      width: 100%; 
-    }
+     padding-right: 0;
+  }
+  .footer-social-links ul li:nth-child(2){
+    padding-left: 0;
+  }
 }
 
 /* index setting */
@@ -347,11 +351,36 @@ body, .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper
   padding-top: 0px;
 }
 
+/* service fixed issue in pc */
+@media (min-width: 992px){
+  .categories-widget.fixed{
+    position: fixed;
+    top: 10%;
+    width: 21%;
+    padding: 0 15px;
+  }
+}
+
 /* RWD */
 @media (max-width: 992px){
   .ft-boxed-hover ul li {
     width: 100%;
   }
+  .navbar .navbar-header .navbar-brand{
+    margin-left: 15px;
+    position: absolute;
+    padding: 20px 0 0 0;
+  }
+  .customer-logo{
+    width: 150px;
+  }
+  .navbar-small .navbar-header .navbar-brand{
+    padding: 16px 0 0 0;
+  }
+  .navbar-small .navbar-header .navbar-brand .customer-logo{
+    width: 120px;
+  }
+
 }
 @media (max-width: 1260px){
   .ft-cards-2 .ft-card-item {
