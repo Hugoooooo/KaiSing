@@ -138,6 +138,13 @@ body, .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper
 }
 
 /* footer setting */
+.footer-litle address ul li .adr-group .adr-info {
+  font-size: .9em;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: #444;
+}
+
 @media (max-width: 600px){
   .footer-social-links ul li {
      width: 100%; 
