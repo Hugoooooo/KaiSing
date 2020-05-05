@@ -129,6 +129,26 @@
             <li>鋁合金由四位數字系統識別。第一個數字給出合金組，而其他合金組合中存在的合金。市面上採用的原材料一般為6000系列的熱處理鋁合金為主。常見型號鋁擠材為 : 6061，6063。您可根據自己的應用需求來選擇不同規格、不同屬性的鋁合金原料來做為參考。</li>
         </ul>
       </div>
+      <div class="col-sm-12">
+        <div class="slider-ctr">
+          <figure class="slide"><img src="assets/images/k1.jpg" />
+          </figure>
+          <figure class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/img1.jpeg" alt="River" />
+          </figure>
+          <figure class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/img4.jpeg" alt="Rain" />
+          </figure>
+          <figure class="slide text-on"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/img2.jpeg" alt="Ocean" />
+          </figure>
+          <div class="slider-control">
+            <div class="control prev disabled">
+              <div class="fa fa-angle-left"></div>
+            </div>
+            <div class="control next">
+              <div class="fa fa-angle-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div><!-- / .row -->
   </section><!-- / .container -->
   <!-- ========== Footer Widgets ========== -->
@@ -188,9 +208,76 @@
   <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/vendor/wow.min.js"></script>
   <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
-
-
   <script src="assets/js/main.js"></script>
+  <script>
+    // buttons
+    var sliderControl = document.querySelector(".slider-control");
+
+    // slides informations
+    var slides = document.querySelectorAll(".slide"),
+      slidesLength = slides.length;
+
+    // slides array
+    var slidesArr = [].slice.call(slides);
+
+    // reverse array sorting
+    slidesArr = slidesArr.reverse();
+
+    // slide current
+    var slideCurrent = 0;
+
+    sliderControl.addEventListener("click", function (e) {
+      target = e.target;
+
+      // get next button
+      if (target.classList.contains("next")) {
+
+        next = e.target,
+          prev = next.previousElementSibling,
+          nextSlide = slidesArr[slideCurrent + 1],
+          slide = slidesArr[slideCurrent];
+
+        slide.classList.add("slide-on");
+        slide.classList.remove("text-on");
+        nextSlide.classList.add("text-on");
+
+        slideCurrent += 1;
+
+        if (slideCurrent > 0) {
+          prev.classList.remove("disabled");
+        }
+
+        if (slideCurrent === slidesLength - 1) {
+          next.classList.add("disabled");
+        }
+      }
+
+      // get prev button
+      if (target.classList.contains("prev")) {
+
+        slideCurrent -= 1;
+
+        prev = e.target,
+          next = prev.nextElementSibling,
+          prevSlide = slidesArr[slideCurrent + 1],
+          slide = slidesArr[slideCurrent];
+
+        prevSlide.classList.remove("text-on");
+        slide.classList.remove("slide-on");
+        slide.classList.add("text-on");
+
+        if (slideCurrent === slidesLength - 2) {
+          next.classList.remove("disabled");
+        }
+
+        if (slideCurrent === 0) {
+          prev.classList.add("disabled");
+        }
+
+      }
+
+    });
+  </script>
 </body>
 
 </html>
