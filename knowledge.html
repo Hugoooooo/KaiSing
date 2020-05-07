@@ -34,6 +34,7 @@
   <!-- Definity CSS -->
   <link rel="stylesheet" href="assets/styles/main.css">
   <link rel="stylesheet" href="assets/styles/responsive.css">
+  <link rel="stylesheet" href="assets/styles/owl.carousel.min.css">
   <!-- Customer CSS -->
   <link rel="stylesheet" href="assets/styles/customer.css">
   <!-- JS -->
@@ -120,7 +121,7 @@
         <p>CNC自動化銑床加工構造，是Z軸為刀具主軸旋轉，工件作XY平面運動，由上往下進行銑削，對於少數或大量生產，銑床都能作經濟的加工，其優點在於圓形銑刀成本經濟、金屬切削率高，能在甚短的時間內，進行多刀刃切削。</p>
       </div>
 
-      <div>
+      <div class="mb-50">
         <h3 class="h-alt">鋁合金介紹及應用</h3>
         <ul class="about-ul">
           <li>鋁合金是工業中應用最廣泛的一類有色金屬結構材料，因為鋁的加工性佳、可塑性高，可依不同需求製造不同形狀或長度的產品。再者，鋁合金具有良好的重量和成本優勢，其密度僅為鋼、銅的三分之一，質輕的特性，大大減低建築模組經常須安裝於屋頂時所承受的重量。在自然環境中，鋁表面會形成薄層之氧化膜，阻絕空氣中之氧氣進一步氧化。加上鋁具優良耐蝕性；而其再經各種不同之表面處理像是
@@ -129,24 +130,48 @@
             <li>鋁合金由四位數字系統識別。第一個數字給出合金組，而其他合金組合中存在的合金。市面上採用的原材料一般為6000系列的熱處理鋁合金為主。常見型號鋁擠材為 : 6061，6063。您可根據自己的應用需求來選擇不同規格、不同屬性的鋁合金原料來做為參考。</li>
         </ul>
       </div>
-      <div class="col-sm-12">
-        <div class="slider-ctr">
-          <figure class="slide"><img src="assets/images/k1.jpg" />
-          </figure>
-          <figure class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/img1.jpeg" alt="River" />
-          </figure>
-          <figure class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/img4.jpeg" alt="Rain" />
-          </figure>
-          <figure class="slide text-on"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/img2.jpeg" alt="Ocean" />
-          </figure>
-          <div class="slider-control">
-            <div class="control prev disabled">
-              <div class="fa fa-angle-left"></div>
-            </div>
-            <div class="control next">
-              <div class="fa fa-angle-right"></div>
-            </div>
+      <!-- ========== INSTAGRAM ========== -->
+      <div>
+        <div id="brand-slide" class="owl-carousel brand-slide">
+          <div class="brand-item">
+            <img src="assets/images/k1.jpg" alt="凱興CNC銑床加工技術">
           </div>
+          <div class="brand-item">
+            <img src="assets/images/k2.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k3.jpg" alt="凱興CNC銑床加工技術">
+          </div>    
+          <div class="brand-item">
+            <img src="assets/images/k4.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k5.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k6.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k7.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k8.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k9.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k10.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k11.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k12.jpg" alt="凱興CNC銑床加工技術">
+          </div>
+          <div class="brand-item">
+            <img src="assets/images/k13.jpg" alt="凱興CNC銑床加工技術">
+          </div>                                                                                                          
         </div>
       </div>
     </div><!-- / .row -->
@@ -208,76 +233,9 @@
   <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/vendor/wow.min.js"></script>
   <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/owl.carousel.thumbs.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    // buttons
-    var sliderControl = document.querySelector(".slider-control");
-
-    // slides informations
-    var slides = document.querySelectorAll(".slide"),
-      slidesLength = slides.length;
-
-    // slides array
-    var slidesArr = [].slice.call(slides);
-
-    // reverse array sorting
-    slidesArr = slidesArr.reverse();
-
-    // slide current
-    var slideCurrent = 0;
-
-    sliderControl.addEventListener("click", function (e) {
-      target = e.target;
-
-      // get next button
-      if (target.classList.contains("next")) {
-
-        next = e.target,
-          prev = next.previousElementSibling,
-          nextSlide = slidesArr[slideCurrent + 1],
-          slide = slidesArr[slideCurrent];
-
-        slide.classList.add("slide-on");
-        slide.classList.remove("text-on");
-        nextSlide.classList.add("text-on");
-
-        slideCurrent += 1;
-
-        if (slideCurrent > 0) {
-          prev.classList.remove("disabled");
-        }
-
-        if (slideCurrent === slidesLength - 1) {
-          next.classList.add("disabled");
-        }
-      }
-
-      // get prev button
-      if (target.classList.contains("prev")) {
-
-        slideCurrent -= 1;
-
-        prev = e.target,
-          next = prev.nextElementSibling,
-          prevSlide = slidesArr[slideCurrent + 1],
-          slide = slidesArr[slideCurrent];
-
-        prevSlide.classList.remove("text-on");
-        slide.classList.remove("slide-on");
-        slide.classList.add("text-on");
-
-        if (slideCurrent === slidesLength - 2) {
-          next.classList.remove("disabled");
-        }
-
-        if (slideCurrent === 0) {
-          prev.classList.add("disabled");
-        }
-
-      }
-
-    });
-  </script>
 </body>
 
 </html>
