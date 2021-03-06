@@ -141,9 +141,15 @@ body, .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper
 .footer-litle address ul li .adr-group .adr-info {
   font-size: .9em;
   letter-spacing: 1.7px;
-  text-transform: uppercase;
+  text-transform: initial;
   color: #444;
 }
+.footer-social-links ul li a {
+  display: block;
+  color: #ececec;
+  text-transform: initial;
+}
+
 
 @media (max-width: 600px){
   .footer-social-links ul li {
